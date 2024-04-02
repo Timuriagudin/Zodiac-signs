@@ -95,3 +95,15 @@ h3 {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
 }
+.two_col{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(14%, 1fr));
+    border-bottom: 2px solid rgb(163, 206, 255);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+img{
+    display: block;
+    margin: 1rem auto;
+    border-radius: 50% 50% 50% 50%;
+}
