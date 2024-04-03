@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: "EB Garamond", serif;
+    font-size: 19px;
+    background-color: #b7cde5;
+}
 
 .logo {
-    background-color: rgb(255, 255, 255);
     color: black;
     text-decoration: none;
-    margin: 25px 0px 25px 25px;
+    margin: 15px 0px 15px 25px;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 50px;
 }
 
 .header_nav_menu {
@@ -18,7 +22,6 @@
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(255, 255, 255);
     align-items: center;
 }
 
@@ -29,15 +32,16 @@
 .header_nav_item a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 .header_nav {
     display: flex;
     justify-content: space-between;
-}
-
-.body {
-    font-family: "EB Garamond", serif;
+    background-color: rgb(234, 250, 255);
+    border-bottom: 2px solid rgb(0, 0, 80);
+    border-top: 2px solid rgb(0, 0, 80);
+    border-radius: 30px;
 }
 
 .bg-light {
@@ -51,6 +55,7 @@
 
 h1 {
     text-align: center;
+    padding: 2rem;
 }
 
 h2 {
@@ -95,15 +100,22 @@ h3 {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
 }
-.two_col{
+
+.two_col {
     display: grid;
     grid-template-columns: repeat(3, minmax(14%, 1fr));
     border-bottom: 2px solid rgb(163, 206, 255);
     margin-bottom: 25px;
     padding-bottom: 25px;
 }
-img{
+
+img {
     display: block;
     margin: 1rem auto;
     border-radius: 50% 50% 50% 50%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
