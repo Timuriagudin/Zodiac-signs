@@ -109,7 +109,7 @@ h3 {
     padding-bottom: 25px;
 }
 
-img {
+.shield img {
     display: block;
     margin: 1rem auto;
     border-radius: 50% 50% 50% 50%;
@@ -118,4 +118,22 @@ img {
 a {
     text-decoration: none;
     color: black;
+}
+.store_img{
+width: 280px;
+}
+.store_cont{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(14%, 1fr));
+}
+.store_item h3 {
+    font-family: "EB Garamond", serif;;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.store_item p {
+    font-family: "EB Garamond", serif;;
+    font-size: 20px;
+    text-align: center;
 }
