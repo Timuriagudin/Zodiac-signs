@@ -11,7 +11,7 @@ body {
 .logo {
     color: black;
     text-decoration: none;
-    margin: 15px 0px 15px 25px;
+    margin-left: 25px;
     font-weight: bold;
     font-size: 50px;
 }
@@ -38,10 +38,9 @@ body {
 .header_nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(234, 250, 255);
-    border-bottom: 2px solid rgb(0, 0, 80);
-    border-top: 2px solid rgb(0, 0, 80);
-    border-radius: 30px;
+    background-color: rgb(217 236 249);
+    height: 65px;
+   border-bottom: 1px solid black;
 }
 
 .bg-light {
@@ -120,7 +119,7 @@ a {
     color: black;
 }
 .store_img{
-width: 280px;
+width: 270px;
 }
 .store_cont{
     display: grid;
@@ -136,4 +135,7 @@ width: 280px;
     font-family: "EB Garamond", serif;;
     font-size: 20px;
     text-align: center;
+}
+.items{
+    margin-top: 50px;
 }
