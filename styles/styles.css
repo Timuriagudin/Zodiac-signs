@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: "EB Garamond", serif;
     font-size: 19px;
@@ -40,7 +41,7 @@ body {
     justify-content: space-between;
     background-color: rgb(217 236 249);
     height: 65px;
-   border-bottom: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .bg-light {
@@ -118,24 +119,64 @@ a {
     text-decoration: none;
     color: black;
 }
-.store_img{
-width: 270px;
+
+.store_img {
+    width: 270px;
 }
-.store_cont{
+
+.store_cont {
     display: grid;
     grid-template-columns: repeat(5, minmax(14%, 1fr));
 }
+
 .store_item h3 {
-    font-family: "EB Garamond", serif;;
+    font-family: "EB Garamond", serif;
+    ;
     font-size: 20px;
     text-align: center;
     padding: 10px;
 }
+
 .store_item p {
-    font-family: "EB Garamond", serif;;
+    font-family: "EB Garamond", serif;
+    ;
     font-size: 20px;
     text-align: center;
 }
-.items{
+
+.items {
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form-raw {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 400px 0px;
+}
+
+
+label {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input,
+select {
+    padding: 5px;
+    margin-top: 5px;
 }

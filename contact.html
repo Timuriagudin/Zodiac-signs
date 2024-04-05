@@ -35,6 +35,44 @@
                 complex. Two signs may seem like the most compatible zodiac signs, but in reality, they may have
                 completely different relationship goals. Find out whether you and your partner are a perfect match by
                 putting your zodiac compatibility to the test.</p>
+
+        </div>
+        <div class="items">
+            <div class="shield" id="description">
+                <div class="store_cont">
+                    <section class="store_item">
+                        <img src="./images/Chinese.jpeg" alt="Chinese" class="store_img">
+                        <h3>2024 Chinese Horoscope</h3>
+                        <p>$24.99</p>
+                    </section>
+                    <section class="store_item">
+                        <img src="./images/Numerology.jpeg" alt="Numerology" class="store_img">
+                        <h3>2024 Numerology Forecast</h3>
+                        <p>$39.99</p>
+                    </section>
+
+                    <section class="store_item">
+                        <img src="./images/premium.jpeg" alt="premium" class="store_img">
+                        <h3>2024 Premium Horoscope</h3>
+                        <p>$49.99</p>
+                    </section>
+
+                    <section class="store_item">
+                        <img src="./images/tarot.jpeg" alt="tarot" class="store_img">
+                        <h3>2024 Tarot Reading</h3>
+                        <p>$24.99</p>
+                    </section>
+
+                    <section class="store_item">
+                        <img src="./images/love.jpeg" alt="love" class="store_img">
+                        <h3>2024 Love Tarot</h3>
+                        <p>$24.99</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="shield" id="description">
             <h2>Birth Chart</h2>
             <p>It’s easy to find out your birth horoscope with a birth chart calculator. But if your question is, “What
                 does my birth chart mean?”—that’s where we come in. In your natal chart, the zodiac sign energy at play
@@ -43,46 +81,59 @@
                 chart
                 analysis that really shows who you really are.</p>
         </div>
-        <div class="items">
-        <div class="shield" id="description">
-            <div class="store_cont">
-                <section class="store_item">
-                    <img src="./images/Chinese.jpeg" alt="Chinese" class="store_img">
-                    <h3>2024 Chinese Horoscope</h3>
-                    <p>$24.99</p>
-                </section>
-                <section class="store_item">
-                    <img src="./images/Numerology.jpeg" alt="Numerology" class="store_img">
-                    <h3>2024 Numerology Forecast</h3>
-                    <p>$39.99</p>
-                </section>
-
-                <section class="store_item">
-                    <img src="./images/premium.jpeg" alt="premium" class="store_img">
-                    <h3>2024 Premium Horoscope</h3>
-                    <p>$49.99</p>
-                </section>
-
-                <section class="store_item">
-                    <img src="./images/tarot.jpeg" alt="tarot" class="store_img">
-                    <h3>2024 Tarot Reading</h3>
-                    <p>$24.99</p>
-                </section>
-
-                <section class="store_item">
-                    <img src="./images/love.jpeg" alt="love" class="store_img">
-                    <h3>2024 Love Tarot</h3>
-                    <p>$24.99</p>
-                </section>
-            </div>
-        </div>
-        </div>
-    <section>
-        <footer class="footer">
-            Coppyright &copy; 2024 Timur Iagudin
-        </footer>
-    </section>
-</div>
+        <h2>Enter Your Information</h2>
+        <form action="https://formspree.io/f/xnqebeaa" method="post" class="contact">
+            <section class="form-raw">
+                <label for="first_name">
+                    First Name
+                    <input type="text" name="first-name" id="first_name" required>
+                </label>
+            </section>
+            <section class="form-raw">
+                <label for="gender">
+                    Gender
+                    <select name="gender" class="field" required>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="na">Prefer not to respond</option>
+                    </select>
+            </section>
+            <section class="form-raw">
+                <label for="dob">
+                    Date of Birth
+                    <input type="date" id="dob" name="dob" required>
+            </section>
+            <section class="form-raw">
+                <label for="tob">
+                    Time of Birth
+                    <input type="time" id="tob" name="tob" required>
+            </section>
+            <section class="form-raw">
+                <label for="location">
+                    Birth location
+                    <input type="text" id="location" name="birth_location" required>
+            </section>
+            <section class="form-raw">
+                <label for="email">
+                    E-mail
+                    <input type="email" id="email" name="email" required>
+            </section>
+            <section class="form-raw">
+                <label for="tel">
+                    Phone number (optional)
+                    <input type="tel" id="tel" name="pnone_number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+            </section>
+            <Section class="form-raw">
+                <label>
+                    <button type="submit">Submit</button>
+                </label>
+            </Section>
+        </form>
+        <section>
+            <footer class="footer">
+                Coppyright &copy; 2024 Timur Iagudin
+            </footer>
+        </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -93,6 +144,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
