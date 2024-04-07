@@ -78,9 +78,10 @@ h3 {
     display: grid;
 }
 
-.three_col {
-    margin: 25px 5px 50px;
+.column_sign {
+    margin: 20px 5px 20px;
     border-radius: 15%;
+    border: 1px solid white;
     text-align: center;
 }
 
@@ -101,7 +102,7 @@ h3 {
     border-radius: 25px;
 }
 
-.two_col {
+.three_col {
     display: grid;
     grid-template-columns: repeat(3, minmax(14%, 1fr));
     border-bottom: 2px solid rgb(163, 206, 255);
@@ -158,13 +159,13 @@ a {
 
 
 label {
-    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
 }
 
 button {
     padding: 10px 20px;
+    margin-top: 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
