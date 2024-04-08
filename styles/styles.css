@@ -74,15 +74,15 @@ h3 {
 .multi_col_cont {
     grid-template-columns: repeat(6, minmax(14%, 1fr));
     grid-template-rows: auto;
-    grid-gap: 1rem;
     display: grid;
 }
 
 .column_sign {
-    margin: 20px 5px 20px;
+    margin: 20px 20px 20px;
     border-radius: 15%;
     border: 1px solid white;
     text-align: center;
+    background-color: rgb(13 136 152 / 29%);
 }
 
 .icon {
