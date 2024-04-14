@@ -181,3 +181,15 @@ select {
     padding: 5px;
     margin-top: 5px;
 }
+.grid{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid white;
+    border-radius: inherit;
+}
+.grid p{
+    margin: 15px;
+    text-align: justify;
+}
