@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +14,10 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <title>Horoscope</title>
+
+</head>
+
+<body>
     <nav class="header_nav">
         <a href="#" class="logo">Zodiac</a>
         <ul class="header_nav_menu">
@@ -24,12 +26,9 @@
             <li class="header_nav_item"><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
-</head>
-
-<body>
     <div class="bg-light">
         <h1>MAKE THIS YOUR YEAR</h1>
-        <div class="shield" id="description">
+        <div class="shield">
             <h2>Love Compatibility </h2>
             <p>What’s Aries and Leo compatibility like? What about Leo and Aquarius? Zodiac love compatibility is
                 complex. Two signs may seem like the most compatible zodiac signs, but in reality, they may have
@@ -38,7 +37,7 @@
 
         </div>
         <div class="items">
-            <div class="shield" id="description">
+            <div class="shield">
                 <div class="store_cont">
                     <section class="store_item">
                         <img src="./images/Chinese.jpeg" alt="Chinese" class="store_img">
@@ -71,8 +70,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="shield" id="description">
+
+        <div class="shield">
             <h2>Birth Chart</h2>
             <p>It’s easy to find out your birth horoscope with a birth chart calculator. But if your question is, “What
                 does my birth chart mean?”—that’s where we come in. In your natal chart, the zodiac sign energy at play
@@ -80,93 +79,72 @@
                 tell show you strengths, weaknesses, biggest fears, and more. Here, you’ll receive a detailed birth
                 chart
                 analysis that really shows who you really are.</p>
-                <div class="grid">
-                    <section class="col-md-3">
-                        <p>The natal chart (a.k.a. birth chart) is a map of the universe at the exact time and place that you
-                            were born.
-                            Astrologers use this map to understand who you are. But, technically speaking, this map is pure
-                            astronomy: it describes the location of the planets at a specific moment in time.
-                        </p>
-                    </section>
-                    <section class="col-md-3">
-                        <img src="./images/chart.png" alt="chart" width="350">
-                    </section>
-                    <section class="col-md-3">
-                        <p>
-                        The planets are shown from the perspective of Earth, against the ring of constellations called the
-                        zodiac.
-                        </p>
-                        <p>
-                        The sign names are constellations
-                        From the perspective of the Earth, at any given time, each planet is in front of one of these
-                        constellations.
-                        </p>
-                </div>
         </div>
-        <h2>Enter Your Information
-            <form action="https://formspree.io/f/xnqebeaa" method="post" class="contact">
-        </h2>
-        <section class="form-raw">
-            <label for="first_name">
-                First Name
-                <input type="text" name="first-name" id="first_name" required>
-            </label>
-        </section>
-        <section class="form-raw">
-            <label for="gender">
-                Gender
-                <select name="gender" class="field" required>
-                    <option value="m">Male</option>
-                    <option value="f">Female</option>
-                    <option value="na">Prefer not to respond</option>
-                </select>
-        </section>
-        <section class="form-raw">
-            <label for="dob">
-                Date of Birth
-                <input type="date" id="dob" name="dob" required>
-        </section>
-        <section class="form-raw">
-            <label for="tob">
-                Time of Birth
-                <input type="time" id="tob" name="tob" required>
-        </section>
-        <section class="form-raw">
-            <label for="location">
-                Birth location
-                <input type="text" id="location" name="birth_location" required>
-        </section>
-        <section class="form-raw">
-            <label for="email">
-                E-mail
-                <input type="email" id="email" name="email" required>
-        </section>
-        <section class="form-raw">
-            <label for="tel">
-                Phone number (optional)
-                <input type="tel" id="tel" name="pnone_number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-        </section>
-        <Section class="form-raw">
-            <label>
-                <button type="submit">Submit</button>
-            </label>
-        </Section>
+        <h2>Enter Your Information</h2>
+
+        <form action="https://formspree.io/f/xnqebeaa" method="post" class="contact">
+            <section class="form-raw">
+                <h3><label for="first_name">
+                    First Name
+                    <input type="text" name="first-name" id="first_name" required>
+                </label></h3>
+            </section>
+            <section class="form-raw">
+                <h3><label for="gender">
+                Gende
+                    <select name="gender" class="field" id="gender" required>
+                        <option value="">Select your gender</option>
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="na">Prefer not to respond</option>
+                    </select>
+                </label></h3>
+            </section>
+            <section class="form-raw">
+                <h3><label for="dob">
+                    Date of Birth
+                    <input type="date" id="dob" name="dob" required>
+                </label></h3>
+            </section>
+            <section class="form-raw">
+                <h3><label for="tob">
+                    Time of Birth
+                    <input type="time" id="tob" name="tob" required>
+                </label></h3>
+            </section>
+            <section class="form-raw">
+                <h3><label for="location">
+                    Birth location
+                    <input type="text" id="location" name="birth_location" required>
+                </label></h3>
+            </section>
+            <section class="form-raw">
+                <h3><label for="email">
+                    E-mail
+                    <input type="email" id="email" name="email" required>
+                </label></h3>
+            </section>
+            <section class="form-raw">
+                <h3><label for="tel">
+                    Phone number (optional)
+                    <input type="tel" id="tel" name="pnone_number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                </label></h3>
+            </section>
+            <Section class="form-raw">
+                <label>
+                    <button type="submit">Submit</button>
+                </label>
+            </Section>
         </form>
         <section>
             <footer class="footer">
-                Coppyright &copy; 2024 Timur Iagudin
+                <h2>Copyright &copy; 2024 Timur Iagudin</h2>
             </footer>
         </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
 </body>
 
