@@ -40,11 +40,6 @@
             <div class="shield">
                 <div class="store_cont">
                     <section class="store_item">
-                        <img src="./images/Chinese.jpeg" alt="Chinese" class="store_img">
-                        <h3>2024 Chinese Horoscope</h3>
-                        <p>$24.99</p>
-                    </section>
-                    <section class="store_item">
                         <img src="./images/Numerology.jpeg" alt="Numerology" class="store_img">
                         <h3>2024 Numerology Forecast</h3>
                         <p>$39.99</p>
@@ -55,7 +50,11 @@
                         <h3>2024 Premium Horoscope</h3>
                         <p>$49.99</p>
                     </section>
-
+                    <section class="store_item">
+                        <img src="./images/chart.png" alt="Chinese" class="store_img">
+                        <h3>2024 Birth Chart</h3>
+                        <p>$70.99</p>
+                    </section>
                     <section class="store_item">
                         <img src="./images/tarot.jpeg" alt="tarot" class="store_img">
                         <h3>2024 Tarot Reading</h3>
@@ -80,62 +79,84 @@
                 chart
                 analysis that really shows who you really are.</p>
         </div>
-        <h2>Enter Your Information</h2>
+        <div>
+            <h2>Enter Your Information</h2>
 
-        <form action="https://formspree.io/f/xnqebeaa" method="post" class="contact">
-            <section class="form-raw">
-                <h3><label for="first_name">
-                    First Name
-                    <input type="text" name="first-name" id="first_name" required>
-                </label></h3>
-            </section>
-            <section class="form-raw">
-                <h3><label for="gender">
-                Gende
-                    <select name="gender" class="field" id="gender" required>
-                        <option value="">Select your gender</option>
-                        <option value="m">Male</option>
-                        <option value="f">Female</option>
-                        <option value="na">Prefer not to respond</option>
-                    </select>
-                </label></h3>
-            </section>
-            <section class="form-raw">
-                <h3><label for="dob">
-                    Date of Birth
-                    <input type="date" id="dob" name="dob" required>
-                </label></h3>
-            </section>
-            <section class="form-raw">
-                <h3><label for="tob">
-                    Time of Birth
-                    <input type="time" id="tob" name="tob" required>
-                </label></h3>
-            </section>
-            <section class="form-raw">
-                <h3><label for="location">
-                    Birth location
-                    <input type="text" id="location" name="birth_location" required>
-                </label></h3>
-            </section>
-            <section class="form-raw">
-                <h3><label for="email">
-                    E-mail
-                    <input type="email" id="email" name="email" required>
-                </label></h3>
-            </section>
-            <section class="form-raw">
-                <h3><label for="tel">
-                    Phone number (optional)
-                    <input type="tel" id="tel" name="pnone_number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
-                </label></h3>
-            </section>
-            <Section class="form-raw">
-                <label>
-                    <button type="submit">Submit</button>
-                </label>
-            </Section>
-        </form>
+            <form action="https://formspree.io/f/xnqebeaa" method="post" class="contact">
+                <section class="form-raw">
+                    <h3><label for="first_name" class="input_field">
+                            First Name
+                            <input type="text" name="first-name" id="first_name" required>
+                        </label></h3>
+                </section>
+                <section class="form-raw">
+                    <h3><label for="gender" class="input_field">
+                            Gender
+                            <select name="gender" id="gender" required>
+                                <option value="">Select your gender</option>
+                                <option value="m">Male</option>
+                                <option value="f">Female</option>
+                                <option value="na">Prefer not to respond</option>
+                            </select>
+                        </label></h3>
+                </section>
+                <section class="form-raw">
+                    <h3><label for="dob" class="input_field">
+                            Date of Birth
+                            <input type="date" id="dob" name="dob" required>
+                        </label></h3>
+                </section>
+                <section class="form-raw">
+                    <h3><label for="tob" class="input_field">
+                            Time of Birth
+                            <input type="time" id="tob" name="tob" required>
+                        </label></h3>
+                </section>
+                <section class="form-raw">
+                    <h3><label for="location" class="input_field">
+                            Birth location
+                            <input type="text" id="location" name="birth_location" required>
+                        </label></h3>
+                </section>
+                <section class="form-raw">
+                    <h3><label for="email" class="input_field">
+                            E-mail
+                            <input type="email" id="email" name="email" required>
+                        </label></h3>
+                </section>
+                <section class="form-raw">
+                    <h3><label for="tel" class="input_field">
+                            Phone number (optional)
+                            <input type="tel" id="tel" name="pnone_number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                        </label></h3>
+                </section>
+                <div class="bundle_opt">
+                    <section class="col-md-2" id="bundle">
+                        <h3><strong>Bundle & Save</strong></h3>
+                        <img src="/images/premium.jpeg" alt="Premium Horoscope" width="200">
+                    </section>
+                    <section class="col-md-4" id="bundle_text">
+                        <p><strong>2024 PREMIUM HOROSCOPE</strong></p>
+                        <p>If you’ve been searching for more freedom and excitement in your life, 2024 could be your
+                            best
+                            year yet! The most influential forces in the sky will be teaming up to inspire radical but
+                            positive change, while also creating the perfect terrain so you can truly follow your
+                            dreams.
+                        </p>
+                        <label>
+                            <input type="checkbox" name="bundle_checkbox" value="2024 PREMIUM HOROSCOPE">
+                            Add for <del>$49.99</del><strong>$39.99</strong>
+                        </label>
+                    </section>
+                </div>
+                <Section class="form-raw">
+                    <label>
+                        <button type="submit">Submit</button>
+                    </label>
+                </Section>
+            </form>
+        </div>
+
         <section>
             <footer class="footer">
                 <h2>Copyright &copy; 2024 Timur Iagudin</h2>

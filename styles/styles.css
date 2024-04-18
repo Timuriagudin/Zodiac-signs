@@ -163,7 +163,7 @@ a {
 }
 
 
-label {
+.input_field {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0px;
@@ -201,3 +201,18 @@ select {
     font-size: 15px;
 }
 
+.bundle_opt{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+#bundle{
+    margin-left: 50px;
+}
+#bundle_text{
+    padding-right: 45px;
+}
+input[type=checkbox]{
+width: 1rem;
+}
