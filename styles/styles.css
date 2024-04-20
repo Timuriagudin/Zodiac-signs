@@ -201,18 +201,21 @@ select {
     font-size: 15px;
 }
 
-.bundle_opt{
+.bundle_opt {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: center;
 }
-#bundle{
+
+#bundle {
     margin-left: 50px;
 }
-#bundle_text{
+
+#bundle_text {
     padding-right: 45px;
 }
-input[type=checkbox]{
-width: 1rem;
+
+input[type=checkbox] {
+    width: 1rem;
 }
